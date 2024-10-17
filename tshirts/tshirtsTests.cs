@@ -32,6 +32,23 @@ public class TshirtTests {
     {
         int input = 38;
         string result = Tshirt.Size(input);
-        Assert.Equal("S", result);
+        Assert.Equal("M", result);
     }
+
+    [Fact]
+    public void Size_ShouldReturnM_ForBoundaryCase39() 
+    {
+        int input = 39;
+        string result = Tshirt.Size(input);
+        Assert.Equal("M", result);
+    }
+    
+    [Fact]
+    public void Size_ShouldReturnL_ForBoundaryCase42() 
+    {
+        int input = 42;
+        string result = Tshirt.Size(input);
+        Assert.Equal("L", result);
+    }
+
 }
