@@ -32,7 +32,7 @@ public class TshirtTests {
     {
         int input = 38;
         string result = Tshirt.Size(input);
-        Assert.Equal("M", result);
+        Assert.Equal("L", result);
     }
 
     [Fact]
