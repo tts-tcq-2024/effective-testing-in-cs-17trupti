@@ -51,4 +51,9 @@ public class TshirtTests {
         Assert.Equal("L", result);
     }
 
+    [Fact]
+    public void Test_TshirtSize_Exactly38() {
+        Assert.Equal("M", Tshirt.Size(38)); // What should it return? Based on logic, it should probably return Medium (M).
+    }
+
 }
